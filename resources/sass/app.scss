@@ -1,0 +1,23 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+.pageTitle {
+    color: #0391CF;
+    font-weight: bold;
+}
+#mainContent {
+    margin-top: 40px;
+}
