@@ -35,12 +35,12 @@
     <div class="menu">
         <div>
             <button class="books" data-url="{{ route('books') }}">Books</button>
-            <button class="onlineClass">Online Class</button>
-            <button class="teacherForum">Teacher Forum</button>
+            <button class="onlineClass" data-url="{{ route('online_class_form') }}">Online Class</button>
+            <button class="teacherForum" data-url="{{ route('teacher_forum') }}">Teacher Forum</button>
         </div>
         <div>
-            <button class="readingLog">Reading Log</button>
-            <button class="comments">Students | Parents' Comments</button>
+            <button class="readingLog" data-url="{{ route('reading_log') }}">Reading Log</button>
+            <button class="comments" data-url="{{ route('students_parents_comments') }}">Students | Parents' Comments</button>
         </div>
     </div>
     <div class="video">
