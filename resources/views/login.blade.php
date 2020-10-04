@@ -28,7 +28,7 @@
                     <input type="password" name="password" placeholder="Password" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Log In" class="btn btn-primary btnLogIn">
+                    <button type="button" class="btn btn-primary btnLogIn" data-url="{{ route('menu', ['type' => 'teacher']) }}">Log In</button>
                 </div>
             </form>
         </div>
@@ -42,9 +42,18 @@
                     <input type="password" name="password" placeholder="Password" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Log In" class="btn btn-primary btnLogIn">
+                    <button type="button" class="btn btn-primary btnLogIn" data-url="{{ route('menu', ['type' => 'student']) }}">Log In</button>
                 </div>
             </form>
         </div>
     </div>
+@endsection
+@section('page-script')
+    <script>
+        $(document).ready(function() {
+           $('.btnLogIn').click(function() {
+               window.location.href = $(this).data('url');
+           })
+        });
+    </script>
 @endsection

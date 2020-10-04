@@ -12,15 +12,35 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    if(\Illuminate\Support\Facades\Session::get('type-login')) {
+        return redirect()->route('menu', ['type' => \Illuminate\Support\Facades\Session::get('type-login')]);
+    }
+    else {
+        return redirect()->route('home');
+    }
+})->name('home');
+
+Route::get('/home', function () {
+    if(\Illuminate\Support\Facades\Session::get('type-login')) {
+        return redirect()->route('menu', ['type' => \Illuminate\Support\Facades\Session::get('type-login')]);
+    }
+    else {
+        return view('home');
+    }
 })->name('home');
 
 Route::get('/login', function () {
     return view('login');
 })->name('login');
 
-Route::get('/menu', function () {
-    return view('menu');
+Route::get('/logout', function () {
+    \Illuminate\Support\Facades\Session::forget('type-login');
+    return redirect()->route('home');
+})->name('logout');
+
+Route::get('/menu/{type}', function ($type) {
+    \Illuminate\Support\Facades\Session::put('type-login', $type);
+    return view('menu')->with('type', $type);
 })->name('menu');
 
 Route::get('/books', function () {

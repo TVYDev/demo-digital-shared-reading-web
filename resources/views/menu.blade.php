@@ -2,7 +2,7 @@
 @section('title', 'Menu')
 @section('content')
     <style>
-        .menu div:first-child, .menu div:last-child {
+        .menu div:first-child, .menu div:last-child, .menuStudent {
             margin: 5px;
             display: grid;
             grid-column-gap: 5px;
@@ -14,7 +14,10 @@
         .menu div:last-child {
             grid-template-columns: 1fr 1fr;
         }
-        .menu button {
+        .menuStudent {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .menu button, .menuStudent button {
             color: #0391CF;
             font-size: 1.1em;
             background: none;
@@ -23,7 +26,7 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        .menu button:hover, .menu button:focus {
+        .menu button:hover, .menu button:focus, .menuStudent button:focus, .menuStudent button:hover {
             background-color: #0391CF;
             color: white;
         }
@@ -32,25 +35,41 @@
             text-align: center;
         }
     </style>
-    <div class="menu">
-        <div>
+    @if($type === 'teacher')
+        <div class="menu">
+            <div>
+                <button class="books" data-url="{{ route('books') }}">Books</button>
+                <button class="onlineClass" data-url="{{ route('online_class_form') }}">Online Class</button>
+                <button class="teacherForum" data-url="{{ route('teacher_forum') }}">Teacher Forum</button>
+            </div>
+            <div>
+                <button class="readingLog" data-url="{{ route('reading_log') }}">Reading Log</button>
+                <button class="comments" data-url="{{ route('students_parents_comments') }}">Students | Parents' Comments</button>
+            </div>
+        </div>
+    @elseif($type === 'student')
+        <div class="menuStudent">
             <button class="books" data-url="{{ route('books') }}">Books</button>
-            <button class="onlineClass" data-url="{{ route('online_class_form') }}">Online Class</button>
-            <button class="teacherForum" data-url="{{ route('teacher_forum') }}">Teacher Forum</button>
+            <button class="onlineClass" data-url="{{ route('online_class_detail') }}">Online Class</button>
+            <button class="readingLog" data-url="{{ route('reading_log_form') }}">Reading Log</button>
+            <button class="comments" data-url="{{ route('feedback_comments') }}">Feedback and Comments</button>
         </div>
-        <div>
-            <button class="readingLog" data-url="{{ route('reading_log') }}">Reading Log</button>
-            <button class="comments" data-url="{{ route('students_parents_comments') }}">Students | Parents' Comments</button>
-        </div>
-    </div>
+    @else
+    @endif
+
     <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/E2zVJp_HeeM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        @if($type === 'teacher')
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/E2zVJp_HeeM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        @elseif($type === 'student')
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ItWVGjCqBNQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        @else
+        @endif
     </div>
 @endsection
 @section('page-script')
     <script type="text/javascript">
         $(document).ready(function() {
-            $('.menu button').click(function() {
+            $('.menu button, .menuStudent button').click(function() {
                 window.location.href = $(this).data('url');
             })
         });

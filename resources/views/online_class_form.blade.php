@@ -31,7 +31,7 @@
         <div class="form-group row">
             <label for="inputRoom" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Create class</button>
+                <button type="button" class="btn btn-primary btnCreateClass" data-url="{{ route('online_class_detail') }}">Create class</button>
             </div>
         </div>
     </form>
@@ -40,3 +40,12 @@
         <br />Then you can invite your students via email or provide a class code to them to join.
     </p>
 @endSection
+@section('page-script')
+    <script>
+        $(document).ready(function() {
+            $('.btnCreateClass').click(function() {
+                window.location.href = $(this).data('url');
+            });
+        })
+    </script>
+@endsection

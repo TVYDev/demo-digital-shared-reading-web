@@ -33,7 +33,7 @@
     <button class="optionButton">Advanced</button>
 
     <ul class="list-group">
-        <li class="list-group-item"><a href="#">The Bubbles</a></li>
+        <li class="list-group-item"><a href="{{ route('books_detail', ['title' => 'The Bubbles']) }}">The Bubbles</a></li>
         <li class="list-group-item"><a href="#">The Dragons!</a></li>
     </ul>
 @endSection

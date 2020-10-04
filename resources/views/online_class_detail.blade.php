@@ -35,16 +35,31 @@
     </style>
     <h1 class="pageTitle">Online Class</h1>
     <hr />
-    <p>After creating a class, you can see your class as below:</p>
-    <div class="classDetail">
-        <div class="leftSide">
-            <button>Stream</button>
-            <button>Set required reading</button>
-            <button>Set Tasks for learners to complete as homework</button>
+    @if(\Illuminate\Support\Facades\Session::get('type-login') === 'teacher')
+        <p>After creating a class, you can see your class as below:</p>
+        <div class="classDetail">
+            <div class="leftSide">
+                <button>Stream</button>
+                <button>Set required reading</button>
+                <button>Set Tasks for learners to complete as homework</button>
+            </div>
+            <div class="rightSide">
+                <div>Young Learners Level 3</div>
+                <div>Stream: Posts in the class will appear here.</div>
+            </div>
         </div>
-        <div class="rightSide">
-            <div>Young Learners Level 3</div>
-            <div>Stream: Posts in the class will appear here.</div>
+    @else
+        <p>After joining a class, you can see your class as below:</p>
+        <div class="classDetail">
+            <div class="leftSide">
+                <button>Stream</button>
+                <button>Required Reading</button>
+                <button>Tasks</button>
+            </div>
+            <div class="rightSide">
+                <div>Young Learners Level 3</div>
+                <div>Stream: Posts in the class will appear here.</div>
+            </div>
         </div>
-    </div>
+    @endif
 @endsection

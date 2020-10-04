@@ -17,9 +17,17 @@
     }
     #navbarNav {
         margin-left: 50px;
+        font-size: 0.8em;
     }
     .navbar-nav .nav-item.active {
         border-bottom: 5px solid white;
+    }
+    .logInName {
+        background-color: white;
+        border-radius: 10px;
+    }
+    .logInName span {
+        color: #0391CF !important;
     }
 </style>
 <nav class="navbar navbar-expand-lg navbarDigital">
@@ -32,9 +40,19 @@
             <li class="nav-item active navHome">
                 <a class="nav-link" href="{{ route('home') }}">Home</a>
             </li>
-            <li class="nav-item navLogin">
-                <a class="nav-link" href="{{ route('login') }}">Login</a>
-            </li>
+            @if(\Illuminate\Support\Facades\Session::get('type-login'))
+                <li class="nav-item navLogout">
+                    <a class="nav-link" href="{{ route('logout') }}">Log out</a>
+                </li>
+
+                <li class="nav-item navLogin logInName">
+                    <span class="nav-link">Log-in {{ \Illuminate\Support\Facades\Session::get('type-login') }}'s name</span>
+                </li>
+            @else
+                <li class="nav-item navLogin">
+                    <a class="nav-link" href="{{ route('login') }}">Log In</a>
+                </li>
+            @endif
         </ul>
     </div>
 </nav>

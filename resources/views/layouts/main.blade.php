@@ -15,12 +15,16 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script>
         $(document).ready(function() {
-            if(window.location.href.includes('login')) {
+            if(window.location.href.includes('/login')) {
                 $('#navbarNav .navHome').removeClass('active');
                 $('#navbarNav .navLogin').addClass('active');
             }
-            else {
+            else if(window.location.href.includes('/home') || window.location.href.includes('/menu')){
                 $('#navbarNav .navHome').addClass('active');
+                $('#navbarNav .navLogin').removeClass('active');
+            }
+            else {
+                $('#navbarNav .navHome').removeClass('active');
                 $('#navbarNav .navLogin').removeClass('active');
             }
         })
