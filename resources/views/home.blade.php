@@ -11,8 +11,15 @@
             justify-self: center;
             align-self: center;
         }
+        div:last-child {
+            justify-self: center;
+            align-self: center;
+        }
+        p {
+            font-size: 0.95em;
+        }
         img {
-            width: 680px;
+            width: 550px;
         }
     </style>
     <div class="homeContent">
