@@ -11,22 +11,8 @@
             justify-self: center;
             align-self: center;
         }
-        div:last-child {
-            justify-self: center;
-            align-self: center;
-        }
         img {
-            width: 580px;
-        }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            width: 100%;
-            color: white;
-            font-style: italic;
-            background-color: #0391CF;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            width: 680px;
         }
     </style>
     <div class="homeContent">
@@ -39,7 +25,5 @@
             <img src="https://www.flipbuilder.com/images/solution/textbook-assitant.jpg">
         </div>
     </div>
-    <div class="footer">
-        Take 30 minutes a day for virtual shared reading to help boost your readers, provide meaningful practice, and build their confidence.
-    </div>
+
 @endsection

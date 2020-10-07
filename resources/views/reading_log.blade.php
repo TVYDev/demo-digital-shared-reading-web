@@ -28,9 +28,9 @@
     <hr />
     <h3>Check students' reflection</h3>
     <div class="studentReflections">
-        <button>Student A (Click here to read and response)…</button>
-        <button>Student B (Click here to read and response)…</button>
-        <button>Student C (Click here to read and response)…</button>
+        <button>Student A (Click here to read)…</button>
+        <button>Student B (Click here to read)…</button>
+        <button>Student C (Click here to read)…</button>
     </div>
 
 @endsection

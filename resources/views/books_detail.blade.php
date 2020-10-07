@@ -57,7 +57,7 @@
             @else
                 <div class="item">
                     <div><img src="https://i.pinimg.com/originals/fb/fc/79/fbfc7905f17f5c4a65df4498f318cede.png" width="50px" alt=""></div>
-                    <div><span class="titleSection">Digital Books with Colorful Pictures,</span><br />Learners/ Parents can view the book by using their smart phones, laptops or iPads</div>
+                    <div><span class="titleSection">Digital Books with Colorful Pictures</span><br />Learners/ Parents can view the book by using their smart phones, laptops or iPads</div>
                 </div>
                 <div class="item">
                     <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Audio_Book_Icon_2.svg/1200px-Audio_Book_Icon_2.svg.png" width="50px" alt=""></div>
