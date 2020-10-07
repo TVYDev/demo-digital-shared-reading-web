@@ -84,7 +84,7 @@
         <div class="form-group row">
             <label for="inputRoom" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10">
-                <button type="button" class="btn btn-primary btnCreateClass">Create class</button>
+                <button type="button" class="btn btn-primary btnCreateClass">Create a new class</button>
             </div>
         </div>
     </form>

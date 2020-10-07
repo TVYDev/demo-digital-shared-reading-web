@@ -18,13 +18,8 @@
         img {
             width: 580px;
         }
-        p {
-            font-size: 0.9em;
-        }
         .footer {
-            position: absolute;
-            left: 0;
-            bottom: 30px;
+            margin-top: 40px;
             text-align: center;
             width: 100%;
             color: white;

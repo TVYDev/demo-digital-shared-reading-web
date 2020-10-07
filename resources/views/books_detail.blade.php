@@ -38,11 +38,11 @@
             @if(\Illuminate\Support\Facades\Session::get('type-login') === 'teacher')
                 <div class="item">
                     <div><img src="https://i.pinimg.com/originals/fb/fc/79/fbfc7905f17f5c4a65df4498f318cede.png" width="50px" alt=""></div>
-                    <div><span class="titleSection">Digital Books with Colorful Pictures,</span><br />Teachers can project the book on a slide projector and follow shared reading approach.</div>
+                    <div><span class="titleSection">Digital Books with Colorful Pictures</span><br />Teachers can project the book on a slide projector and follow shared reading approach.</div>
                 </div>
                 <div class="item">
                     <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Audio_Book_Icon_2.svg/1200px-Audio_Book_Icon_2.svg.png" width="50px" alt=""></div>
-                    <div><span class="titleSection">An audio book</span><br />Teachers can play this audio if he/ she wants to play another good model of reading to students</div>
+                    <div><span class="titleSection">An audiobook</span><br />Teachers can play this audio if he/ she wants to play another good model of reading to students</div>
                 </div>
                 <div class="item">
                     <div><img src="https://cdn0.iconfinder.com/data/icons/simple-set-of-help-support-and-contact-us/64/__1464_px-512.png" width="50px" alt=""></div>
@@ -61,14 +61,14 @@
                 </div>
                 <div class="item">
                     <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Audio_Book_Icon_2.svg/1200px-Audio_Book_Icon_2.svg.png" width="50px" alt=""></div>
-                    <div><span class="titleSection">An audio book</span><br />Student can listen to a good model of reading</div>
+                    <div><span class="titleSection">An audiobook</span><br />Student can listen to a good model of reading</div>
                 </div>
                 <div class="item">
                     <div><img src="https://cdn0.iconfinder.com/data/icons/simple-set-of-help-support-and-contact-us/64/__1464_px-512.png" width="50px" alt=""></div>
                     <div><span class="titleSection">Instructions |Guided Questions | Glossary</span><br />Parents can use these questions to ask their children if they read the book aloud together. If learners read on their own, they can also read these questions to gain some ideas about the text.</div>
                 </div><div class="item">
                     <div><img src="https://cdn1.iconfinder.com/data/icons/education-solid-icons-vol-1/48/008-512.png" width="50px" alt=""></div>
-                    <div><span class="titleSection">Post-exercises</span><br />Students can check their comprehension by completing the post tasks.</div>
+                    <div><span class="titleSection">Post-reading exercises</span><br />Students can check their comprehension by completing the post tasks.</div>
             @endif
         </div>
     </div>

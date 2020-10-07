@@ -9,15 +9,16 @@
         .branch:last-child {
             border: none;
         }
-        h5 {
+        .blockTitle {
             font-weight: bold;
             color: #0391CF;
         }
     </style>
     <h1 class="pageTitle">Contact Us</h1>
+    <h5>The Australian Centre for Education (ACE) has 6 campuses in Cambodia.</h5>
     <hr />
     <div class="branch">
-        <h5>ACE Santhor Mok Campus</h5>
+        <h5 class="blockTitle">ACE Santhor Mok Campus</h5>
         <p>
             <strong>Address:&nbsp;</strong> #657, Kampuchea Krom Blvd.,
             Sangkat Teuk Laark 1, Khan Toul Kork, Phnom Penh<br />
@@ -32,7 +33,7 @@
         </p>
     </div>
     <div  class="branch">
-        <h5>ACE Samdech Pan Campus</h5>
+        <h5 class="blockTitle">ACE Samdech Pan Campus</h5>
         <p>
             <strong>Address:&nbsp;</strong> #46, Street 214,
             Sangkat Boeung Raing, Khan Daun Penh<br />
@@ -47,7 +48,7 @@
         </p>
     </div>
     <div  class="branch">
-        <h5>ACE Tuol Tom Poung Campus</h5>
+        <h5 class="blockTitle">ACE Tuol Tom Poung Campus</h5>
         <p>
             <strong>Address:&nbsp;</strong>#67, ST. 163 Corner St 480,
             Sangkat Psar Deumthkov, Khan Chamkamon, Phnom Penh<br />
@@ -62,7 +63,7 @@
         </p>
     </div>
     <div class="branch">
-        <h5>ACE Tuol Kork Campus</h5>
+        <h5 class="blockTitle">ACE Tuol Kork Campus</h5>
         <p>
             <strong>Address:&nbsp;</strong># 08, St. 600 Corner St. 307
             Sangkat Boeung Kak II, Khan Toul Kork, Phnom Penh<br />
@@ -77,7 +78,7 @@
         </p>
     </div>
     <div class="branch">
-        <h5>ACE Chak Angre Campus</h5>
+        <h5 class="blockTitle">ACE Chak Angre Campus</h5>
         <p>
             <strong>Address:&nbsp;</strong> National Road 2, Prek Talong Village, Sangkat Chak Angre Krom, Khan Mean Chey, Phnom Penh<br />
             <strong>Tel:&nbsp;</strong> (855) 23 231 100<br />
@@ -91,7 +92,7 @@
         </p>
     </div>
     <div class="branch">
-        <h5>ACE Siem Reap Campus</h5>
+        <h5 class="blockTitle">ACE Siem Reap Campus</h5>
         <p>
             <strong>Address:&nbsp;</strong> #0896, High School Road,
             Wat Bo Village, Sala Kamreuk Commune, Siem Reap<br />

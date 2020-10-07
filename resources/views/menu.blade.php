@@ -40,11 +40,11 @@
             <div>
                 <button class="books" data-url="{{ route('books') }}">Online resources</button>
                 <button class="onlineClass" data-url="{{ route('online_class_form') }}">Virtual reading classrooms</button>
-                <button class="teacherForum" data-url="{{ route('teacher_forum') }}">Teacher Forum</button>
+                <button class="teacherForum" data-url="{{ route('teacher_forum') }}">Teacher forum</button>
             </div>
             <div>
                 <button class="readingLog" data-url="{{ route('reading_log') }}">Students' reading logs</button>
-                <button class="comments" data-url="{{ route('students_parents_comments') }}">Students | Parents' Feedback/ questions</button>
+                <button class="comments" data-url="{{ route('students_parents_comments') }}">Students | Parents' feedback/ questions</button>
             </div>
         </div>
     @elseif($type === 'student')

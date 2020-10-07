@@ -86,7 +86,7 @@
         </div>
     </div>
     <div class="noBooks" style="font-style: italic;">
-        No books.
+        Books will be available soon
     </div>
 @endSection
 @section('page-script')
