@@ -1,5 +1,9 @@
 @extends('layouts.main')
-@section('title', 'Books')
+@if(\Illuminate\Support\Facades\Session::get('type-login') === 'teacher')
+    @section('title', 'Online resources')
+@else
+    @section('title', 'Books')
+@endif
 @section('content')
     <style>
         .optionButton {
@@ -34,7 +38,11 @@
             opacity: 0.5;
         }
     </style>
-    <h1 class="pageTitle">Online resources</h1>
+    @if(\Illuminate\Support\Facades\Session::get('type-login') === 'teacher')
+        <h1 class="pageTitle">Online resources</h1>
+    @else
+        <h1 class="pageTitle">Books</h1>
+    @endif
     <p>
         There are a range of books categorized based on their genres (e.g. fiction or non-fiction). Once you choose the book genre, it will show a list of books in different levels from elementary to advanced. You can also search using the title and/or author of the book you would like to read. The list of books can also be customized and arranged based on the alphabetical order of the book titles or authors.
     </p>

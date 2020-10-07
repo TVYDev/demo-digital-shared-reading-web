@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'Reading Log')
+@section('title', 'Students\' reading log')
 @section('content')
     <style>
         .studentReflections {
@@ -19,7 +19,12 @@
             color: #0391CF;
         }
     </style>
-    <h1 class="pageTitle">Reading Log</h1>
+    <h1 class="pageTitle">Students' reading log</h1>
+    <ul>
+        <li>After students finish reading a book, they will write a diary or reflection of the book.</li>
+        <li>It is where teachers can check their students’ reading diary or reflection to track their progress.</li>
+        <li>Click the name of a student to see the reflections of the books they have read.</li>
+    </ul>
     <hr />
     <h3>Check students' reflection</h3>
     <div class="studentReflections">
@@ -27,9 +32,5 @@
         <button>Student B (Click here to read)…</button>
         <button>Student C (Click here to read)…</button>
     </div>
-    <ul>
-        <li>After students finish reading a book, they will write a diary or reflection of the book.</li>
-        <li>It is where teachers can check their students’ reading diary or reflection to track their progress.</li>
-        <li>Click the name of a student to see the reflections of the books they have read.</li>
-    </ul>
+
 @endsection

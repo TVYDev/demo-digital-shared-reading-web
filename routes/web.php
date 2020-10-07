@@ -56,7 +56,7 @@ Route::get('/online-class-form', function () {
 })->name('online_class_form');
 
 Route::get('/online-class-detail', function () {
-    return view('online_class_detail');
+    return view('online_class_detail_v2');
 })->name('online_class_detail');
 
 Route::get('/teacher-forum', function () {

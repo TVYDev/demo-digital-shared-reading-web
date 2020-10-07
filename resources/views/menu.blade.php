@@ -50,9 +50,9 @@
     @elseif($type === 'student')
         <div class="menuStudent">
             <button class="books" data-url="{{ route('books') }}">Books</button>
-            <button class="onlineClass" data-url="{{ route('online_class_detail') }}">Online Class</button>
-            <button class="readingLog" data-url="{{ route('reading_log_form') }}">Reading Log</button>
-            <button class="comments" data-url="{{ route('feedback_comments') }}">Feedback and Comments</button>
+            <button class="onlineClass" data-url="{{ route('online_class_detail') }}">My virtual reading classrooms</button>
+            <button class="readingLog" data-url="{{ route('reading_log_form') }}">My reading log</button>
+            <button class="comments" data-url="{{ route('feedback_comments') }}">Feedback/ questions</button>
         </div>
     @else
     @endif
@@ -60,11 +60,13 @@
     <div class="video">
         @if($type === 'teacher')
             <iframe width="560" height="315" src="https://www.youtube.com/embed/E2zVJp_HeeM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>It is an example of how shared reading can be conducted in the classroom.</p>
         @elseif($type === 'student')
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ItWVGjCqBNQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Watch the video to see how parents can do shared reading with their children!</p>
         @else
         @endif
-        <p>It is an example of how shared reading can be conducted in the classroom.</p>
+
     </div>
 @endsection
 @section('page-script')
