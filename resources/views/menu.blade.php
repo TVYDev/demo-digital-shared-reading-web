@@ -50,7 +50,7 @@
     @elseif($type === 'student')
         <div class="menuStudent">
             <button class="books" data-url="{{ route('books') }}">Books</button>
-            <button class="onlineClass" data-url="{{ route('online_class_detail') }}">My virtual reading classrooms</button>
+            <button class="onlineClass" data-url="{{ route('online_class_detail') }}">My virtual reading classroom</button>
             <button class="readingLog" data-url="{{ route('reading_log_form') }}">My reading log</button>
             <button class="comments" data-url="{{ route('feedback_comments') }}">Feedback/ questions</button>
         </div>

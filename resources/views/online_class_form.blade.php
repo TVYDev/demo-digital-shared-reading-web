@@ -57,7 +57,7 @@
     </style>
     <h1 class="pageTitle">Virtual reading classrooms</h1>
     <p>
-        Fill some info to create your class.
+        Fill in the information to create your class.
         <br />Then you can invite your students via email or provide a class code to them to join.
     </p>
     <hr />

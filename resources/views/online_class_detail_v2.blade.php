@@ -2,7 +2,7 @@
 @if(\Illuminate\Support\Facades\Session::get('type-login') === 'teacher')
     @section('title', 'Virtual reading classrooms')
 @else
-    @section('title', 'My virtual reading classrooms')
+    @section('title', 'My virtual reading classroom')
 @endif
 @section('content')
     <style>
@@ -77,7 +77,7 @@
     @if(\Illuminate\Support\Facades\Session::get('type-login') === 'teacher')
         <h1 class="pageTitle">Virtual reading classrooms</h1>
     @else
-        <h1 class="pageTitle">My virtual reading classrooms</h1>
+        <h1 class="pageTitle">My virtual reading classroom</h1>
     @endif
     <span class="className">Class 1</span><span><strong>(16:00-17:30)</strong></span>
     <div>
