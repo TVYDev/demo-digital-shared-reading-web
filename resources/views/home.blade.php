@@ -4,25 +4,47 @@
     <style>
         .homeContent {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-column-gap: 30px;
         }
         div:first-child {
             justify-self: center;
             align-self: center;
         }
+        div:last-child {
+            justify-self: center;
+            align-self: center;
+        }
         img {
             width: 500px;
+        }
+        p {
+            font-size: 0.9em;
+        }
+        .footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            color: white;
+            font-style: italic;
+            background-color: #0391CF;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     </style>
     <div class="homeContent">
         <div>
-            <strong>Digital Shared Reading</strong> brings that concept to the online platform which we believe will promote reading habits, strategies and fluency for students. As books are available at their fingertips, we hope that it will eliminate the barriers of going to the book club  or the library and complete some borrowing information, which discourages students from borrowing and reading books. Teachers can also make the best use of this website to make their reading classes more interactive and fun. Through this site, parents can also be a part of their children learning process.
-            <br /><br />
-            This website is best suited for children and young learners at the Australian Centre for Education (ACE).
+            <p><strong>Digital Shared Reading</strong> is an online platform which aims at promoting reading habits, strategies and fluency for students. This website is best suited for children (age 5-10) and young learners (age 10-15) at the Australian Centre for Education (ACE).</p>
+            <p><strong>If you log in as a teacher,</strong> you can access a wide range of digital shared books together with instructions and guided questions. A variety of useful teaching resources related to shared reading are also provided to make reading classes more enjoyable and interactive. Teachers will no longer need to carry a big shared book to class anymore. They can just project the digital book in the class while exploiting shared reading techniques. No matter how big the class size is, all students will be able to see the texts and pictures more clearly. Teachers can also create their own virtual shared reading classes to help students improve their reading skills outside the classroom. Finally, there is a forum where teachers can share and learn from other educators’ teaching reading experience.</p>
+            <p><strong>If you log in as a student/ parents,</strong> you can also access a range of shared books together with instructions and guided questions. Students can interact with their teachers and peers as well as complete reading tasks in their virtual classroom. There is also a place where students/ parents can communicate digitally with the classroom teachers regarding shared reading lessons.</p>
         </div>
         <div>
-            <img src="https://st2.depositphotos.com/1967477/6351/v/450/depositphotos_63519645-stock-illustration-cartoon-kids-reading-book.jpg">
+            <img src="https://www.flipbuilder.com/images/solution/textbook-assitant.jpg">
         </div>
+    </div>
+    <div class="footer">
+        Take 30 minutes a day for virtual shared reading to help boost your readers, provide meaningful practice, and build their confidence.
     </div>
 @endsection

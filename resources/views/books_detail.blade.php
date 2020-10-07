@@ -19,31 +19,39 @@
             padding: 10px;
             border: 1px solid darkgray;
             border-radius: 5px;
+            cursor: pointer;
+        }
+        .rightSide .item:hover {
+            background-color: lightblue;
+        }
+        .titleSection {
+            font-weight: bold;
+            color: #0391CF;
         }
     </style>
     <h1 class="pageTitle">The Bubbles</h1>
     <div class="contentDetail">
         <div class="leftSide">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/611eO5mndNL.jpg" width="250px" alt="">
+            <img src="https://instructionalseries.tki.org.nz/var/tki-eesoll/storage/images/instructional-series/ready-to-read/bubbles/417807-1-eng-NZ/Bubbles_resource_image.jpg" width="250px" alt="">
         </div>
         <div class="rightSide">
             <div class="item">
                 <div><img src="https://i.pinimg.com/originals/fb/fc/79/fbfc7905f17f5c4a65df4498f318cede.png" width="50px" alt=""></div>
-                <div>Digital Books with Colorful Pictures, <br />Teachers will project the book on a slide projector and follow shared reading approach.</div>
+                <div><span class="titleSection">Digital Books with Colorful Pictures,</span><br />Teachers can project the book on a slide projector and follow shared reading approach.</div>
             </div>
             <div class="item">
-                <div><img src="https://i.pinimg.com/originals/fb/fc/79/fbfc7905f17f5c4a65df4498f318cede.png" width="50px" alt=""></div>
-                <div>An audio book <br />If teachers want to play another good model of reading to students.</div>
+                <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Audio_Book_Icon_2.svg/1200px-Audio_Book_Icon_2.svg.png" width="50px" alt=""></div>
+                <div><span class="titleSection">An audio book</span><br />Teachers can play this audio if he/ she wants to play another good model of reading to students</div>
             </div>
             <div class="item">
-                <div><img src="https://i.pinimg.com/originals/fb/fc/79/fbfc7905f17f5c4a65df4498f318cede.png" width="50px" alt=""></div>
-                <div>Instructions |Guided Questions | Glossary <br />Teachers can have ideas of what questions to ask learners while reading the book aloud to them.</div>
+                <div><img src="https://cdn0.iconfinder.com/data/icons/simple-set-of-help-support-and-contact-us/64/__1464_px-512.png" width="50px" alt=""></div>
+                <div><span class="titleSection">Instructions |Guided Questions | Glossary</span><br />This gives teachers ideas of what questions to ask learners while reading the book aloud to them.</div>
             </div><div class="item">
-                <div><img src="https://i.pinimg.com/originals/fb/fc/79/fbfc7905f17f5c4a65df4498f318cede.png" width="50px" alt=""></div>
-                <div>Background music that fits the book’s context (Suggestopedia Approach)</div>
+                <div><img style="border-radius: 30px;" src="https://image.freepik.com/free-icon/black-music-icon_318-9277.jpg" width="50px" alt=""></div>
+                <div><span class="titleSection">Background music</span><br /> It fits the book’s context (Suggestopedia Approach).<br />Teachers can use it while reading a book aloud to students.</div>
             </div><div class="item">
-                <div><img src="https://i.pinimg.com/originals/fb/fc/79/fbfc7905f17f5c4a65df4498f318cede.png" width="50px" alt=""></div>
-                <div>Suggested Activities | Teaching Materials <br />Teachers can use for post activities while exploiting shared reading approach.</div>
+                <div><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/puzzle-1500570-1271215.png" width="50px" alt=""></div>
+                <div><span class="titleSection">Suggested Activities | Teaching Materials</span><br />Teachers can use for post activities while exploiting shared reading approach.</div>
             </div>
 
 

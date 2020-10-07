@@ -38,13 +38,13 @@
     @if($type === 'teacher')
         <div class="menu">
             <div>
-                <button class="books" data-url="{{ route('books') }}">Books</button>
-                <button class="onlineClass" data-url="{{ route('online_class_form') }}">Online Class</button>
+                <button class="books" data-url="{{ route('books') }}">Online resources</button>
+                <button class="onlineClass" data-url="{{ route('online_class_form') }}">Virtual reading classrooms</button>
                 <button class="teacherForum" data-url="{{ route('teacher_forum') }}">Teacher Forum</button>
             </div>
             <div>
-                <button class="readingLog" data-url="{{ route('reading_log') }}">Reading Log</button>
-                <button class="comments" data-url="{{ route('students_parents_comments') }}">Students | Parents' Comments</button>
+                <button class="readingLog" data-url="{{ route('reading_log') }}">Students' reading logs</button>
+                <button class="comments" data-url="{{ route('students_parents_comments') }}">Students | Parents' Feedback/ questions</button>
             </div>
         </div>
     @elseif($type === 'student')
@@ -64,6 +64,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ItWVGjCqBNQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         @else
         @endif
+        <p>It is an example of how shared reading can be conducted in the classroom.</p>
     </div>
 @endsection
 @section('page-script')
