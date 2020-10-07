@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb078672-39a2-4675-a340-17c5a2fd23d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/online_class_detail_v2.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contact_us.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/books.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/books_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/feedback_comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback_comments.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/stickers.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/online_class_detail_v2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/online_class_detail_v2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/online_class_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/online_class_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reading_log.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reading_log.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reading_log_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reading_log_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students_parents_comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students_parents_comments.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teacher_forum.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher_forum.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,6 +22,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -182,7 +191,7 @@
       <updated>1601738510424</updated>
       <workItem from="1601738511591" duration="1776000" />
       <workItem from="1601770459721" duration="15403000" />
-      <workItem from="1602034377414" duration="8985000" />
+      <workItem from="1602034377414" duration="10078000" />
     </task>
     <servers />
   </component>

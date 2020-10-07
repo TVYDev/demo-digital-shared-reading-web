@@ -40,6 +40,9 @@
             <li class="nav-item active navHome">
                 <a class="nav-link" href="{{ route('home') }}">Home</a>
             </li>
+            <li class="nav-item navContactUs">
+                <a class="nav-link" href="{{ route('contact_us') }}">Contact Us</a>
+            </li>
             @if(\Illuminate\Support\Facades\Session::get('type-login'))
                 <li class="nav-item navLogout">
                     <a class="nav-link" href="{{ route('logout') }}">Log out</a>

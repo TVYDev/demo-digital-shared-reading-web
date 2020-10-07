@@ -18,13 +18,21 @@
         $(document).ready(function() {
             if(window.location.href.includes('/login')) {
                 $('#navbarNav .navHome').removeClass('active');
+                $('#navbarNav .navContactUs').removeClass('active');
                 $('#navbarNav .navLogin').addClass('active');
             }
             else if(window.location.href.includes('/home') || window.location.href.includes('/menu')){
                 $('#navbarNav .navHome').addClass('active');
+                $('#navbarNav .navContactUs').removeClass('active');
                 $('#navbarNav .navLogin').removeClass('active');
             }
+            else if(window.location.href.includes('/contact-us')){
+                $('#navbarNav .navContactUs').addClass('active');
+                $('#navbarNav .navLogin').removeClass('active');
+                $('#navbarNav .navHome').removeClass('active');
+            }
             else {
+                $('#navbarNav .navContactUs').removeClass('active');
                 $('#navbarNav .navHome').removeClass('active');
                 $('#navbarNav .navLogin').removeClass('active');
             }

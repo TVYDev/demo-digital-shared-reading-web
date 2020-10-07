@@ -23,7 +23,18 @@
             grid-template-columns: auto 30px;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: url({{asset('images/stickers.jpg')}});
+        }
+        .listClasses .topContent.class1 {
+            background-image: url({{asset('images/class_2.jpg')}});
+        }
+        .listClasses .topContent.class2 {
+            background-image: url({{asset('images/class_1.jpg')}});
+        }
+        .listClasses .topContent.class3 {
+            background-image: url({{asset('images/class_3.jpg')}});
+        }
+        .listClasses .topContent.class4 {
+            background-image: url({{asset('images/class_4.jpg')}});
         }
         .listClasses .middleContent {
             height: 100px;
@@ -79,7 +90,7 @@
     </form>
     <div class="listClasses">
         <div class="itemClass" data-url="{{ route('online_class_detail') }}">
-            <div class="topContent">
+            <div class="topContent class1">
                 <div><h4>Class 1</h4></div>
                 <div><i class="fas fa-ellipsis-v"></i></div>
                 <div>T2 2020</div>
@@ -91,7 +102,7 @@
             </div>
         </div>
         <div class="itemClass">
-            <div class="topContent">
+            <div class="topContent class2">
                 <div><h4>Class 2</h4></div>
                 <div><i class="fas fa-ellipsis-v"></i></div>
                 <div>T2 2020</div>
@@ -103,7 +114,7 @@
             </div>
         </div>
         <div class="itemClass">
-            <div class="topContent">
+            <div class="topContent class3">
                 <div><h4>Class 3</h4></div>
                 <div><i class="fas fa-ellipsis-v"></i></div>
                 <div>T2 2020</div>
@@ -115,7 +126,7 @@
             </div>
         </div>
         <div class="itemClass">
-            <div class="topContent">
+            <div class="topContent class4">
                 <div><h4>Class 4</h4></div>
                 <div><i class="fas fa-ellipsis-v"></i></div>
                 <div>T2 2020</div>
@@ -132,7 +143,10 @@
     <script>
         $(document).ready(function() {
             $('.itemClass').click(function() {
-                window.location.href = $(this).data('url');
+                const url = $(this).data('url')
+                if(url) {
+                    window.location.href = url;
+                }
             });
         })
     </script>

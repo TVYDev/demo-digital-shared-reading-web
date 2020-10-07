@@ -73,7 +73,10 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('.menu button, .menuStudent button').click(function() {
-                window.location.href = $(this).data('url');
+                const url = $(this).data('url');
+                if(url) {
+                    window.location.href = url;
+                }
             })
         });
     </script>

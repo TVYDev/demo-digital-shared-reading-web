@@ -19,7 +19,7 @@
             color: white;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: url({{asset('images/stickers.jpg')}});
+            background-image: url({{asset('images/class_2.jpg')}});
             padding: 20px;
         }
         .thumbnail div {

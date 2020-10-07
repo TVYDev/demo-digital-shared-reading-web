@@ -29,6 +29,10 @@ Route::get('/home', function () {
     }
 })->name('home');
 
+Route::get('/contact-us', function () {
+    return view('contact_us');
+})->name('contact_us');
+
 Route::get('/login', function () {
     return view('login');
 })->name('login');
