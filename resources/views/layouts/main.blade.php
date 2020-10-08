@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <style>
         .footer {
-            margin-top: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 15px;
+            /*margin-top: 25px;*/
             text-align: center;
             width: 100%;
             color: white;
