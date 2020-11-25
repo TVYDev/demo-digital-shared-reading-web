@@ -66,23 +66,23 @@
 
     function passValueToNative (value) {
         // Check if the page is viewed on mobile
-        console.log('agent', navigator.userAgent);
         if(navigator.userAgent.toLowerCase().includes('mobile')) {
             // For Android
-            console.log('webkit', window.webkit);
+            alert('clicked');
             if(Android) {
                 Android.actionFromWebView(value);
             }
             // For iOS
             else if(window.webkit) {
+                alert('click window webkit');
                 window.webkit.messageHandlers.actionFromWebView.postMessage(value);
             }
             else {
-                console.warn('Unknown client');
+                alert('Unknown client');
             }
         }
         else {
-            console.warn('Page is not viewed on mobile');
+            alert('Page is not viewed on mobile');
         }
     }
 </script>
