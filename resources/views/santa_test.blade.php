@@ -32,6 +32,7 @@
             <hr />
         @endforeach
     </code>
+    <div class="appendTextTest"></div>
 @endif
 
 <h4>📱 App Links:</h4>
@@ -67,6 +68,7 @@
     function passValueToNative (value) {
         // Check if the page is viewed on mobile
         alert('here');
+        document.querySelector('.appendTextTest').innerHTML = value;
         if(navigator.userAgent.toLowerCase().includes('mobile')) {
             // For Android
             alert('clicked');
