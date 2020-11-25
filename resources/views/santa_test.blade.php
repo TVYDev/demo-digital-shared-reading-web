@@ -32,8 +32,8 @@
             <hr />
         @endforeach
     </code>
-    <div class="appendTextTest"></div>
 @endif
+<div class="appendTextTest"></div>
 
 <h4>📱 App Links:</h4>
 <button type="button" class="btn-app-link" value="UPGRADE-KYC">KYC</button>
