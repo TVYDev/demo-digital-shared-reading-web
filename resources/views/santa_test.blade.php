@@ -72,14 +72,14 @@
         if(navigator.userAgent.toLowerCase().includes('mobile')) {
             // For Android
             alert('clicked');
-            if(Android) {
-                Android.actionFromWebView(value);
-            }
-            // For iOS
-            else if(window.webkit) {
+            if(window.webkit) {
                 alert('click window webkit');
                 window.webkit.messageHandlers.actionFromWebView.postMessage(value);
             }
+            else if(Android) {
+                Android.actionFromWebView(value);
+            }
+            // For iOS
             else {
                 alert('Unknown client');
             }
