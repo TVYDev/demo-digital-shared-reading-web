@@ -66,6 +66,7 @@
 
     function passValueToNative (value) {
         // Check if the page is viewed on mobile
+        alert('here');
         if(navigator.userAgent.toLowerCase().includes('mobile')) {
             // For Android
             alert('clicked');
