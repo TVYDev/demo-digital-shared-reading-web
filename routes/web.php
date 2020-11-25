@@ -82,3 +82,11 @@ Route::get('/students-parents-comments', function () {
 Route::get('/feedback-comments', function () {
     return view('feedback_comments');
 })->name('feedback_comments');
+
+Route::post('santa', function(\Illuminate\Http\Request $request) {
+    \Illuminate\Support\Facades\Session::put('santa-token', $request->token);
+    return view('santa_test')->with('payload', $request->all());
+});
+Route::get('santa', function() {
+    return view('santa_test');
+});
