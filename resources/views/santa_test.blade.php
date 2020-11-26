@@ -19,10 +19,15 @@
         h4 {
             font-weight: bold;
         }
+        .console {
+            display: block;
+            margin-top: 20px;
+            color: darkred;
+        }
     </style>
 </head>
 <body>
-<button type="button" class="btn-close">❌</button>
+<button type="button" class="btn-action" value="CLOSED">❌</button>
 <h2>🎅 Santa Web View Testing</h2>
 @if(isset($payload))
     <h4>📥 Receive data from native:</h4>
@@ -33,11 +38,12 @@
         @endforeach
     </code>
 @endif
-<div class="appendTextTest"></div>
 
 <h4>📱 App Links:</h4>
-<button type="button" class="btn-app-link" value="UPGRADE-KYC">KYC</button>
-<button type="button" class="btn-app-link" value="MONEY-TRANSFER">Money Transfer</button>
+<button type="button" class="btn-action" value="UPGRADE-KYC">KYC</button>
+<button type="button" class="btn-action" value="MONEY-TRANSFER">Money Transfer</button>
+
+<code class="console"></code>
 
 <script type="text/javascript">
     window.onload = function(event) {
@@ -49,43 +55,38 @@
             transferTo: '012xxxxxx'
         }
 
-        let appLinkBtns = document.querySelectorAll('.btn-app-link');
+        let appLinkBtns = document.querySelectorAll('.btn-action');
         appLinkBtns.forEach(function(btn) {
             btn.addEventListener('click', function() {
                 let value = this.getAttribute('value');
                 dataToNative.action = value.toUpperCase();
                 let jsonStringData = JSON.stringify(dataToNative);
 
+                document.querySelector('.console').innerHTML = 'Sending data: ' + jsonStringData;
+
                 passValueToNative(jsonStringData);
             })
-        })
-
-        document.querySelector('.btn-close').addEventListener('click', function() {
-            passValueToNative('CLOSED');
         })
     }
 
     function passValueToNative (value) {
+        let consoleDiv = document.querySelector('.console');
         // Check if the page is viewed on mobile
-        alert('here');
-        document.querySelector('.appendTextTest').innerHTML = value;
         if(navigator.userAgent.toLowerCase().includes('mobile')) {
-            // For Android
-            alert('clicked');
+            // For iOS
             if(window.webkit) {
-                alert('click window webkit');
                 window.webkit.messageHandlers.actionFromWebView.postMessage(value);
             }
             else if(Android) {
                 Android.actionFromWebView(value);
             }
-            // For iOS
+            // For Android
             else {
-                alert('Unknown client');
+                consoleDiv.innerHTML += '<br />Unknown Client';
             }
         }
         else {
-            alert('Page is not viewed on mobile');
+            consoleDiv.innerHTML += '<br />Page is not viewed on mobile';
         }
     }
 </script>
