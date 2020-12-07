@@ -52,7 +52,9 @@
             partner: 'Nextzy',
             token: token,
             remark: '#joinSantaGame',
-            transferTo: '0121231231'
+            transferTo: '0121231231',
+            currency: 'USD',
+            amount: 0.01
         }
 
         let appLinkBtns = document.querySelectorAll('.btn-action');

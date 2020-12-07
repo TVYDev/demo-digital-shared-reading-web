@@ -144,7 +144,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -188,6 +188,7 @@
       <workItem from="1602034377414" duration="17429000" />
       <workItem from="1606298922654" duration="1935000" />
       <workItem from="1606357820184" duration="5758000" />
+      <workItem from="1607327582025" duration="184000" />
     </task>
     <servers />
   </component>
